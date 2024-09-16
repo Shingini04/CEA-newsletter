@@ -65,34 +65,34 @@ const recentPostsContainer = document.getElementById('recentPosts');
 const loadMoreButton = document.getElementById('loadMore');
 let visiblePosts = 6;
 
-function createPostCard(post) {
-    const card = document.createElement('div');
-    card.className = 'post-card';
-    card.innerHTML = `
-        <img src="${post.image}" alt="${post.title}" class="post-image">
-        <div class="post-overlay">
-            <h3 class="post-title">${post.title}</h3>
-            <p class="post-excerpt">${post.excerpt}</p>
-            <a href="#" class="read-more">Read More</a>
-        </div>
-    `;
-    return card;
+function createPostCard(post, index) {
+  const card = document.createElement('div');
+  card.className = 'post-card';
+  card.innerHTML = `
+      <img src="${post.image}" alt="${post.title}" class="post-image">
+      <div class="post-overlay">
+          <h3 class="post-title">${post.title}</h3>
+          <p class="post-excerpt">${post.excerpt}</p>
+          <a href="article.html?postIndex=${index}" class="read-more">Read More</a>
+      </div>
+  `;
+  return card;
 }
 
 function displayPosts() {
-    recentPostsContainer.innerHTML = '';
-    for (let i = 0; i < visiblePosts && i < posts.length; i++) {
-        recentPostsContainer.appendChild(createPostCard(posts[i]));
-    }
+  recentPostsContainer.innerHTML = '';
+  for (let i = 0; i < visiblePosts && i < posts.length; i++) {
+      recentPostsContainer.appendChild(createPostCard(posts[i], i));
+  }
 }
 
 loadMoreButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    visiblePosts += 6;
-    if (visiblePosts >= posts.length) {
-        loadMoreButton.style.display = 'none';
-    }
-    displayPosts();
+  e.preventDefault();
+  visiblePosts += 6;
+  if (visiblePosts >= posts.length) {
+      loadMoreButton.style.display = 'none';
+  }
+  displayPosts();
 });
 
 displayPosts();
