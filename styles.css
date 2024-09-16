@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap');
 
 :root {
-    --primary-color: #8B4513; /* Dark brown for headings */
+    --primary-color: #8B4513;
     --secondary-color: #D2691E;
     --text-color: #333;
-    --background-color: #FFFFFF; /* Ensuring the background is white */
-    --dark-brown: #4B2D1C; /* Very dark brown for "Recent Posts" */
+    --background-color: #FFFFFF; 
+    --dark-brown: #4B2D1C; 
 }
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--background-color); /* White background */
+    background-color: var(--background-color); 
     color: var(--text-color);
-    animation: none; /* Removed backgroundShift animation for a static white background */
+    animation: none; 
 }
 
 .container {
