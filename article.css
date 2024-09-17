@@ -111,3 +111,166 @@ body {
     border-radius: 50px;
     text-decoration: none;
 }
+
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outersignup{
+    background-color: black;
+    display: flex;
+    margin-top: 10vh;
+    gap: 5vh;
+    height: 6.25vh;
+    border-radius: 15px;
+    padding: 3vh;
+    position: relative;
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.outersignup::after, .outersignup::before{
+    content: '';
+    position:absolute;
+    height: 35%;
+    width: 95%;
+    translate: -3.5% -28%;
+    
+    z-index: -1;
+    border-radius: 15px;
+    background-image: conic-gradient(from var(--angle),#D2691E ,transparent 98%);
+    padding: 5vh;
+    animation: 2.5s spin linear infinite;
+   
+}
+
+@keyframes spin{
+    from{
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
+    }
+}
+
+.signupcont{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color:white;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-left: 5vh;
+}
+.signupform{
+    display: flex;
+    width: auto;
+    background-color: white;
+    padding: 2vh;
+    border-radius: 10px;
+}
+.mailicon{
+    display: flex;
+    align-items: center;
+}
+.inputtxt {
+    border: none;
+    outline: none;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.inputtxt:focus {
+    border: none;   
+    outline:none
+}
+    .subscribe{
+    cursor: pointer;
+    position: relative;
+    top: -0.3vh;
+    color:#a95214;
+}
+.gap{
+    display: flex;
+    gap: 48vh;
+}
+
+
+@media screen and  (max-width: 600px) {
+    .signupcont{
+        font-size: 20px;
+        align-self: center;
+    }
+    .forminput{
+        width: 10vh;
+        height: 2vh;
+    }
+    .outersignupform{
+        width: 100%;
+        margin-left: 10vh;
+    }
+    .outersignup::after, .outersignup::before{
+        translate: -10% -10%;
+        display: none;
+        
+    }
+    .subscribe{
+        font-size: 10px;
+    }
+    .signupform{
+        width: 10%;
+    }
+    .gap{
+        display: flex;
+        gap:25vh;
+        
+    }
+    .outersignup{
+        display: flex;
+        flex-direction: column;
+        height: 15%;
+    }
+    .subscribe{
+        font-size: 7px;
+    }
+}
+
+/* For tablets */
+@media screen and (max-width: 900px) {
+    .signupcont{
+        font-size: 20px;
+        align-self: center;
+    }
+    .forminput{
+        width: 1vh;
+    }
+    .outersignup::after, .outersignup::before{
+        width: 91%;
+        height: 62%;
+        translate: -6% -17%;
+    }
+    .subscribe{
+        font-size: 14px;
+    }
+    .signupform{
+        width: auto;
+    }
+    .gap{
+        display: flex;
+        
+    }
+    .outersignup{
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+    }
+
+}
+
+/* For large screens (desktops and larger) */
+@media screen and (min-width: 901px) {
+  
+}

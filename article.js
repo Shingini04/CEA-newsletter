@@ -78,3 +78,21 @@ function displayArticle() {
 }
 
 displayArticle();
+function validateEmail(email) {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailPattern.test(email);
+}
+
+document.getElementById('subscribeBtn').addEventListener('click', function() {
+  const emailInput = document.getElementById('inputtxt').value;
+  const errorMsg = document.getElementById('err-msg');
+
+  if (!emailInput) {
+    errorMsg.textContent = "Email address is required!";
+  } else if (!validateEmail(emailInput)) {
+    errorMsg.textContent = "Please enter a valid email address!";
+  } else {
+    errorMsg.textContent = ""; 
+    alert("Subscribed successfully!");
+  }
+});
