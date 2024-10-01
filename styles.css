@@ -15,6 +15,7 @@ body {
     background-color: var(--background-color); 
     color: var(--text-color);
     animation: none; 
+    background-color: #f4f0ec;
 }
 
 .container {
