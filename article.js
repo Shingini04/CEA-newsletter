@@ -1,9 +1,24 @@
 const posts = [
   {
-    title: "10 Tips for Better Structural Design",
-    content:
-      "Here is the full content of the article about 10 Tips for Better Structural Design. It goes into detail about structural design techniques, materials, and industry best practices.     The Indian Institute of Technology Madras (IIT Madras) marked its 65th Institute Day with a grand celebration that brought together students, faculty, alumni, and staff. The event, a testament to the institute's enduring legacy and commitment to excellence, featured speeches, awards, and reflections on a remarkable year of achievements.",
-    image: "civil.jpg",
+    title: "Environmental Engineering: Innovating for a Greener Tomorrow",
+    content: `
+      <p style="font-size: 18px; line-height: 1.6;">As the world faces growing problems like climate change, pollution, and the depletion of resources, environmental engineering offers practical solutions. Often called the "protector of the planet," this field combines technology and care for the environment, aiming to solve pressing global issues.</p>
+
+      <p style="font-size: 18px; line-height: 1.6;">Climate change is one of the most pressing problems of our time. Rising temperatures, extreme weather events, and shifting ecosystems are affecting billions of people globally.</p>
+
+      <p style="font-size: 18px; line-height: 1.6;">Environmental engineers are at the forefront of tackling these challenges by developing innovative approaches to mitigate the impact of human activities on the environment. From creating sustainable building designs to devising waste management systems, their work is essential in promoting greener ways of living.</p>
+
+      <p style="font-size: 18px; line-height: 1.6;">One key area is air pollution, which contributes to health problems and environmental degradation. Environmental engineers are advancing technologies such as Carbon Capture and Storage (CCS), designed to trap carbon emissions directly from the atmosphere.</p>
+
+      <p style="font-size: 18px; line-height: 1.6;">This method is gaining traction as industries seek ways to lower their carbon output and meet stricter environmental regulations. Engineers are also working on air filtration systems that can reduce harmful pollutants in urban settings, improving air quality for millions of people.</p>
+
+      <p style="font-size: 18px; line-height: 1.6;">By focusing on these technologies, environmental engineers are helping industries transition to greener practices. But while the battle for cleaner air rages on, another global challenge looms large: the world's increasing demand for fresh water. Environmental engineers are also on the front lines of this fight, innovating ways to secure our most precious resource—water. Read on to find out how these professionals are addressing the world's growing water crisis.</p>
+
+      <p style="font-size: 16px;">Citations:<br><a href="https://www.wikipedia.org/">https://www.wikipedia.org/</a></p>
+
+      <p style="font-size: 16px; font-style: italic;">Written by,<br>Vahid Basha Shaik<br>Coordinator in CEA</p>
+    `,
+    images: ["HEIF_Image_4.jpg", "HEIF_Image_5.jpg"]
   },
   {
     title: "The Future of Sustainable Construction",
@@ -91,13 +106,26 @@ function displayArticle() {
   if (postIndex !== null && posts[postIndex]) {
     const post = posts[postIndex];
     document.getElementById("articleTitle").textContent = post.title;
-    document.getElementById("articleContent").textContent = post.content;
-    document.getElementById("articleImage").src = post.image;
-    document.getElementById("articleImage").alt = post.title;
+    document.getElementById("articleContent").innerHTML = post.content;
+    const existingImages = document.querySelectorAll('.article-image');
+    existingImages.forEach(img => img.remove());
+    if (post.images && post.images.length > 0) {
+      const firstImage = document.createElement("img");
+      firstImage.src = post.images[0];
+      firstImage.alt = post.title;
+      firstImage.className = "article-image";
+      document.getElementById("articleContent").insertBefore(firstImage, document.getElementById("articleContent").firstChild);
+    }
+    if (post.images && post.images.length > 1) {
+      const secondImage = document.createElement("img");
+      secondImage.src = post.images[1];
+      secondImage.alt = post.title;
+      secondImage.className = "article-image";
+      document.getElementById("articleContent").appendChild(secondImage);
+    }
   } else {
     document.getElementById("articleTitle").textContent = "Article not found";
     document.getElementById("articleContent").textContent = "";
-    document.getElementById("articleImage").style.display = "none";
   }
 }
 

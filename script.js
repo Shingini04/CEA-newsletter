@@ -1,7 +1,7 @@
 const posts = [
-    { title: "10 Tips for Better Structural Design", 
+    { title: "Environmental Engineering: Innovating for a Greener Tomorrow", 
       excerpt: "Learn how to enhance your structural design skills with these essential tips. Discover the latest trends and best practices in civil engineering.", 
-      image: "civil.jpg" 
+      image: "HEIF_Image_4.jpg" 
     },
     
     { title: "The Future of Sustainable Construction", 
