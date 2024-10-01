@@ -1,6 +1,6 @@
 const posts = [
     { title: "Environmental Engineering: Innovating for a Greener Tomorrow", 
-      excerpt: "Learn how to enhance your structural design skills with these essential tips. Discover the latest trends and best practices in civil engineering.", 
+      excerpt: "As the world faces growing problems like climate change, pollution, and the depletion of resources, environmental engineering offers practical solutions.", 
       image: "HEIF_Image_4.jpg" 
     },
     
