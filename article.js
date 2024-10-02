@@ -1,12 +1,9 @@
 const posts = [
   {
-    title: "Informal Nite",
-    content1:
-      "On the evening of August 2nd, 2024, the CEA of IIT Madras hosted a lively and unforgettable Informal Night for the freshers. Designed to foster interaction and fun, this event brought together the freshie batch for an evening filled with games, tasks, performances, and, most importantly, the chance to connect with each other and the CEA team.",
-    content2:
-      "On the evening of August 2nd, 2024, the CEA of IIT Madras hosted a lively and unforgettable Informal Night for the freshers. Designed to foster interaction and fun, this event brought together the freshie batch for an evening filled with games, tasks, performances, and, most importantly, the chance to connect with each other and the CEA team.",
-    image1: "Informalnite1.png",
-    image2: "Informalnite2.png",
+    title: "10 Tips for Better Structural Design",
+    content:
+      "Here is the full content of the article about 10 Tips for Better Structural Design. It goes into detail about structural design techniques, materials, and industry best practices.     The Indian Institute of Technology Madras (IIT Madras) marked its 65th Institute Day with a grand celebration that brought together students, faculty, alumni, and staff. The event, a testament to the institute's enduring legacy and commitment to excellence, featured speeches, awards, and reflections on a remarkable year of achievements.",
+    image: "civil.jpg",
   },
   {
     title: "The Future of Sustainable Construction",
@@ -94,15 +91,12 @@ function displayArticle() {
   if (postIndex !== null && posts[postIndex]) {
     const post = posts[postIndex];
     document.getElementById("articleTitle").textContent = post.title;
-    document.getElementById("articleContent-1").textContent = post.content1;
-    document.getElementById("articleContent-2").textContent = post.content2;
-    document.getElementById("articleImage1").src = post.image1;
-    document.getElementById("articleImage2").src = post.image2;
+    document.getElementById("articleContent").textContent = post.content;
+    document.getElementById("articleImage").src = post.image;
     document.getElementById("articleImage").alt = post.title;
   } else {
     document.getElementById("articleTitle").textContent = "Article not found";
     document.getElementById("articleContent").textContent = "";
-    document.getElementById("articleImage").style.display = "none";
   }
 }
 

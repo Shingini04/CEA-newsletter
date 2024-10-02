@@ -1,7 +1,7 @@
 const posts = [
-    { title: "Informal Nite", 
-      excerpt: "On the evening of August 2nd, 2024, the CEA of IIT Madras hosted a lively and unforgettable Informal Night for the freshers. Designed to foster interaction and fun, this event brought together the freshie batch for an evening filled with games, tasks, performances, and, most importantly, the chance to connect with each other and the CEA team.", 
-      image: "informalnite1.png" 
+    { title: "10 Tips for Better Structural Design", 
+      excerpt: "Learn how to enhance your structural design skills with these essential tips. Discover the latest trends and best practices in civil engineering.", 
+      image: "civil.jpg" 
     },
     
     { title: "The Future of Sustainable Construction", 
