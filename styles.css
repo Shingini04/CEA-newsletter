@@ -32,6 +32,7 @@ body {
     color: var(--dark-brown); /* Very dark brown color for "Recent Posts" */
     position: relative;
     overflow: hidden;
+    display: inline-block;
 }
 
 hr {
