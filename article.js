@@ -24,67 +24,75 @@ const posts = [
     `,
   },
   {
-    title: "The Future of Sustainable Construction",
-    content:
-      "Here is the full content of the article about The Future of Sustainable Construction. It explores new materials, energy-efficient building techniques, and innovative design practices.",
-  },
-  {
-    title: "Mastering Geotechnical Analysis",
-    content:
-      "Here is the full content of the article about Mastering Geotechnical Analysis. It covers soil mechanics, testing methods, and case studies in geotechnical engineering.",
-  },
-  {
-    title: "Optimizing Structural Safety",
-    content:
-      "Discover techniques to ensure the safety and reliability of your structures. Improve safety standards and durability.",
-  },
+    title: "Water Resource Management: Tackling the Growing Freshwater Crisis",
+    content: ` <img src=  "image.html" />
+    
+    <p style="font-size: 18px; line-height: 1.6;">Climate change is one of the most pressing problems of our time. Rising temperatures, extreme weather events, and shifting ecosystems are affecting billions of people globally.</p>
+    
+      <p style="font-size: 18px; line-height: 1.6;">While air pollution remains a central focus, another global challenge is the increasing scarcity of freshwater. The demand for clean water continues to grow as populations rise and urbanization expands. Environmental engineers are leading the charge in developing technologies that ensure clean, safe, and abundant water supplies for communities around the world.
+</p>
+  
+      <p style="font-size: 18px; line-height: 1.6;">Desalination, the process of turning seawater into freshwater, has emerged as a crucial tool for addressing water shortages, especially in regions with limited access to natural freshwater sources. Environmental engineers are making significant strides in improving desalination efficiency by reducing energy consumption and the environmental impact of the process. These innovations are essential in regions like the Middle East and North Africa, where desalinated water is a critical resource for sustaining life.</p>
+      
+      <img src="HEIF_Image_5.jpg" alt="Water Crisis Solutions" style="width: 100%; margin-top: 20px;" />
+  
+      <p style="font-size: 18px; line-height: 1.6;">In addition to desalination, greywater recycling is gaining popularity as a sustainable way to manage water use in urban environments. Greywater, which comes from household activities like washing dishes and clothes, can be treated and reused for purposes such as irrigation or toilet flushing. By reusing this water, cities can significantly reduce the demand on their freshwater supplies, making urban living more sustainable.
+</p>
+  
+      <p style="font-size: 18px; line-height: 1.6;">As environmental engineers work to address water scarcity through technological solutions, they are also tackling water pollution. Contaminants like microplastics and chemicals present serious challenges to water quality. Engineers are developing filtration systems and treatment methods that prevent pollutants from entering our water systems, helping to protect both human health and aquatic ecosystems.</p>
 
-  {
-    title: "Introduction to Hydraulics in Civil Engineering",
-    content:
-      "Learn how to apply hydraulics principles in civil engineering projects. Understand water flow, pressure management, and system designs.",
-  },
+      <p style="font-size: 18px; line-height: 1.6;">Water scarcity and pollution are critical issues, but they are closely linked to a broader challenge—reducing the presence of harmful plastics in the environment, which leads to the next major concern: microplastics.These tiny plastics are becoming a major threat to our oceans and health. Intrigued? Dive into the next section to see how engineers are fighting these invisible enemies and keeping our water safe.</p>
 
-  {
-    title: "Building Resilient Infrastructure",
-    content:
-      "Best practices for designing and constructing resilient infrastructure that withstands natural disasters and extreme conditions.",
+      <p style="font-size: 16px;">Citations:<br><a href="https://www.rotork.com/en/water-power/water/desalination">https://www.rotork.com/en/water-power/water/desalination/</a></p>
+  
+      <p style="font-size: 16px; font-style: italic;">Written by,<br>Vahid Basha Shaik<br>Coordinator in CEA</p>
+      `,
   },
-
   {
-    title: "Innovations in Concrete Technology",
-    content:
-      "An overview of the most innovative materials and techniques in concrete technology. Enhance your projects with the latest advancements.",
+    title: "The Fight Against Microplastics: Keeping Oceans and Food Safe",
+    content: `
+    <p style="font-size: 18px; line-height: 1.6;">As the world becomes more aware of the dangers of plastic pollution, one of the emerging concerns is microplastics—tiny particles of plastic that make their way into oceans, rivers, and even the food we eat. These particles pose significant threats to marine ecosystems and human health. Environmental engineers are playing a vital role in combating this growing problem through innovative filtration and prevention technologies.</p>
+    
+    <img src="HEIF_Image_4.jpg" alt="Environmental Innovation" style="width: 100%; margin-top: 20px;" />
+    <p style="font-size: 18px; line-height: 1.6;">Microplastics enter water bodies through various sources, such as degraded plastic waste, synthetic textiles, and even personal care products. Once they are in the environment, they are difficult to remove and can harm aquatic life by being ingested. The particles can also end up in the food chain, raising concerns about their impact on human health. </p>
+    
+      <p style="font-size: 18px; line-height: 1.6;">Addressing microplastic pollution requires a multi-faceted approach, and environmental engineers are rising to the challenge.</p>
+  
+      <p style="font-size: 18px; line-height: 1.6;">One of the key solutions being explored is the development of advanced filtration systems that can capture microplastics before they enter larger water bodies. These filters are being designed for use in wastewater treatment plants and industrial processes, where microplastics often originate. Additionally, engineers are working on biodegradable alternatives to traditional plastics, which could reduce the amount of plastic waste entering the environment in the first place.</p>
+      
+      <img src="HEIF_Image_5.jpg" alt="Water Crisis Solutions" style="width: 100%; margin-top: 20px;" />
+  
+      <p style="font-size: 18px; line-height: 1.6;">Another promising area of research focuses on reducing plastic production altogether. Engineers are exploring sustainable materials that can replace conventional plastics, such as plant-based polymers and algae-derived compounds. By reducing the reliance on plastic products, society can prevent future microplastic pollution.</p>
+  
+      <p style="font-size: 18px; line-height: 1.6;">The fight against microplastics is closely tied to broader efforts in sustainability, including reducing our dependence on fossil fuels and promoting renewable energy sources. These initiatives are key to the future of environmental engineering, which is deeply intertwined with the development of clean energy solutions.Next up? How renewable energy plays a role in this fight and how engineers are reshaping the future of energy. Get ready for a deep dive into clean energy innovations!</p>
+  
+  
+      <p style="font-size: 16px;">Citations:<br><a href="https://www.mdpi.com/2072-6643/15/3/617">https://www.mdpi.com/2072-6643/15/3/617</a>
+      <br></br>
+      <a href="https://www.digicomply.com/blog/microplastics-in-seafood">https://www.digicomply.com/blog/microplastics-in-seafood</a></p>
+
+      <p style="font-size: 16px; font-style: italic;">Written by,<br>Vahid Basha Shaik<br>Coordinator in CEA</p>`,
   },
-
   {
-    title: "Civil Engineering Project Management",
+    title: "Renewable Energy: Powering the Future Sustainably",
     content:
-      "Learn effective project management techniques for civil engineering projects. Streamline your workflow and improve project outcomes.",
-  },
-
-  {
-    title: "Sustainable Urban Planning Guidelines",
-    content:
-      "Ensure your urban planning projects prioritize sustainability and inclusivity. Learn how to create environmentally-friendly urban spaces.",
-  },
-
-  {
-    title: "Version Control for Engineering Projects",
-    content:
-      "Master the basics of version control for better document management and collaboration on engineering projects.",
-  },
-
-  {
-    title: "Intro to Smart Cities",
-    content:
-      "Learn how to design and implement smart city technologies. Discover the future of urban infrastructure development.",
-  },
-
-  {
-    title: "Bridge Design and Load Calculations",
-    content:
-      "A guide to bridge design and understanding load calculations. Learn how to create efficient and safe bridge structures.",
+      ` <p style="font-size: 18px; line-height: 1.6;">Environmental engineering doesn’t just stop at solving pollution or water-related issues—it also plays a crucial role in transforming how we produce and consume energy. Renewable energy is the cornerstone of a sustainable future, and environmental engineers are at the forefront of designing and implementing clean energy solutions that reduce reliance on fossil fuels.</p>
+      <img src="HEIF_Image_4.jpg" alt="Environmental Innovation" style="width: 100%; margin-top: 20px;" />
+    
+    <p style="font-size: 18px; line-height: 1.6;">The use of solar power, wind energy, and biofuels is rapidly expanding, thanks to advances in environmental engineering. Solar power, in particular, has seen tremendous growth as engineers improve the efficiency of photovoltaic cells and develop new materials that make solar panels more affordable and accessible. Similarly, wind energy technology has progressed, with engineers designing more efficient turbines capable of generating large amounts of electricity in various climates and conditions.
+</p>
+    
+      <p style="font-size: 18px; line-height: 1.6;">Biofuels are another area where environmental engineers are making a significant impact. These renewable energy sources, derived from organic materials such as plants and waste, offer a cleaner alternative to traditional fossil fuels. Engineers are developing advanced biofuel production techniques that increase yields while minimizing the environmental impact of growing the raw materials.</p>
+  
+      <p style="font-size: 18px; line-height: 1.6;">By focusing on renewable energy, environmental engineers are helping to reduce greenhouse gas emissions, a major contributor to climate change. Their efforts in promoting clean energy align with broader sustainability goals, including the reduction of plastic pollution and the conservation of natural resources like water.</p>
+      
+      <img src="HEIF_Image_5.jpg" alt="Water Crisis Solutions" style="width: 100%; margin-top: 20px;" />
+  
+      <p style="font-size: 18px; line-height: 1.6;">In summary, environmental engineering is a comprehensive field that addresses various interconnected global challenges. From improving air quality and managing water resources to combatting microplastics and promoting renewable energy, environmental engineers are leading the way in creating a more sustainable and livable future for all.</p>
+  
+      <p style="font-size: 16px;">Citations:<br><a href="https://biotechnologyforbiofuels.biomedcentral.com/articles/10.1186/s13068-024-02461-0">https://biotechnologyforbiofuels.biomedcentral.com/articles/10.1186/s13068-024-02461-0</a><br></br><a href = "https://www.visualcapitalist.com/what-are-the-five-major-types-of-renewable-energy/">https://www.visualcapitalist.com/what-are-the-five-major-types-of-renewable-energy/</a></p>
+  
+      <p style="font-size: 16px; font-style: italic;">Written by,<br>Vahid Basha Shaik<br>Coordinator in CEA</p>`,
   },
 ];
 
